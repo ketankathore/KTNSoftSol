@@ -8,16 +8,14 @@ namespace EasyCareSoft.Models
     {
         [Key]
         [DatabaseGenerated (DatabaseGeneratedOption.Identity)]
-        public int EntNo { get; set; }
-        public string UserName { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
-        public Boolean Satus { get; set; }
-        public DateTime EntDateTime { get; set; }
+        public int UserAutoID { get; set; }
         public string UserID { get; set; } = string.Empty;
+        public string Pswd { get; set; } = string.Empty;
+        public int EmpNo { get; set; }
+        public string ActiveStatus { get; set; } = string.Empty;
+        public DateTime EntDateTime { get; set; }
         public DateTime UpdDateTime { get; set; }
-        public string UpdUserID { get; set; } = string.Empty;
-
-
+        public string UpdUserID { get; set; } = string.Empty; 
 
     }
 }
